@@ -39,8 +39,10 @@ class Minitest::Test
   end
 
   def test_food_count
+    assert_equal(3,@river.fish_count)
     assert_equal(0,@bear.food_count)
     @bear.get_food_from_river(@river)
+    assert_equal(2,@river.fish_count)
     assert_equal(1,@bear.food_count)
   end
 
