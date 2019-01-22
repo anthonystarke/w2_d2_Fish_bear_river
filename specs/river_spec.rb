@@ -30,7 +30,7 @@ class Minitest::Test
   end
 
   def test_river_remove_fish
-    @river.remove_fish(@fish_2)
+    @river.fish_collection.pop()
     assert_equal(2,@river.fish_count)
   end
 

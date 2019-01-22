@@ -20,7 +20,6 @@ class Minitest::Test
     school_of_fish << fish_3
 
     @river = River.new("Amazon",school_of_fish)
-
     @bear = Bear.new("Yogi","Grizzly")
 
   end
