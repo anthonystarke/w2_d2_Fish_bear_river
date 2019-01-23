@@ -12,8 +12,12 @@ class River
     return @fish_collection.length()
   end
 
-  def remove_fish(fish)
-    @fish_collection.delete(fish)
+  def remove_fish()
+    @fish_collection.pop
+  end
+
+  def get_fish
+    @fishes.pop
   end
 
 end

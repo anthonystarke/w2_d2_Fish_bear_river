@@ -9,7 +9,10 @@ class Bear
   end
 
   def get_food_from_river(river)
-    @food_collection << river.fish_collection.pop
+
+    fish = river.remove_fish()
+    @food_collection << fish if !fish.nil?
+
   end
 
   def food_count
